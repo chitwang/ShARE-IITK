@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta content="nav-bar" name="share">
+        <link rel="stylesheet" href="nav_css.css">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+        <!---->
+        <script>
+            window.onload = function () {
+                setTimeout(function () {
+                    document.getElementById("loadWrapper").style.display = "none";
+                    document.getElementById("content").style.display = 'block';
+                    document.getElementById("content").style.animation = 'transition 0.75s';
+        
+                }, 1750)//Change this to change the duration of the preloader
+        
+            }
+        </script>
+
+
+
+        <!---->
+    </head>
+
+    <body>
+        
+        <div class="loadWrapper" id="loadWrapper">
+            <div class="loader"><img src="logo_share_iitk.png" alt=""></div>
+        </div>
+        
+        
+        <div id="content">
+        <section id="nav-bar-sec">
+
+            <a href="home" id="nav-img-link">
+                <img src="logo_main.png" id="logo-share">
+                <img src="logo_share_iitk.png" id="logo-iitk">
+            </a>
+            <ul id="nav-bar-ul">
+                <li class="nav-item"><a class="nav-ul-link"  id="final-link"  href="alpha">Team</a></li>
+                <li class="nav-item"><a class="nav-ul-link" href="alpha">About</a></li>
+                <li class="nav-item"><a class="nav-ul-link" href="alpha">Home</a></li>
+            </ul>
+        </section>
+        </div>
+    </body>
+</html>
